@@ -7,10 +7,9 @@
 </head>
 <body>
   <?php
-    $dsn = 'mysql:dbname=todolist:host=localhost:charset=u'
+    $dsn = 'mysql:dbname=todolist;host=localhost;charset=UTF8';
     $user = 'root';
-    $password = 'root';
-    $dbh = new PDO($dsn, $user, password);
+    $dbh = new PDO($dsn, $user);
     $dbh->query('SET NAMES utf8');
     $dbh->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
   ?>
@@ -19,5 +18,3 @@
 <HR>
 </body>
 </html>
-kuso
-aaaaaaaaaaaaaaaaaaaaaa
