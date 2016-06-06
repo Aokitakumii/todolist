@@ -6,7 +6,7 @@
 <link href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.css" rel="stylesheet">
 <title>todolist</title>
 </head>
-<body>
+<body onLoad="document.form1.txt.focus()">
 
   <?php
     $dsn = 'mysql:dbname=todolist;host=localhost;charset=UTF8';
@@ -17,7 +17,7 @@
 
 
   ?>
-<form action="index.php" method="GET">
+<form name="form1" action="index.php" method="GET">
 <input type="text" name="txt">
 <button type='submit' name = 'add' value='add'>add</button>
 </form>
